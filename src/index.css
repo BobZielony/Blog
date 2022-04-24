@@ -1,0 +1,282 @@
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Comic Sans MS';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Comic Sans MS';
+}
+
+
+.indexMenager{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainPage{
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.entryArray{
+  flex: 1 1 auto;
+}
+
+.entryArray > .entry{
+  width: 98%;
+  margin: 25px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entryArray > .entry > .art_content{
+  border: 2px #95a5a6 solid;
+  flex: 1 1 auto;
+}
+
+.entryArray > .entry > .art_content > div {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  
+}
+
+.entryArray > .entry > .art_content > div > img{
+  max-width: 100%;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entryArray > button{
+  width: 95%;
+  margin: 25px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.sideBar{
+  width: 400px;
+}
+
+.sideBar > .loginWindow{
+  border-bottom: yellow 3px solid;
+}
+
+.sideBar > .loginWindow:hover{
+  border-bottom: none;
+}
+
+.login_button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  background-color: aqua;
+}
+
+.logout_button{
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: aqua;
+  font-size: 20px;
+}
+
+.user{
+  text-decoration: underline;
+}
+
+.logout_button:hover{
+  cursor: pointer;
+  transform: scale(1);
+  transition: 500ms;
+  border: 2px solid black;
+  background-color:#f3f387 ;
+}
+.login_button:hover{
+  cursor: pointer;
+  transform: scale(1);
+  transition: 500ms;
+  border: 2px solid black;
+  background-color:#f3f387  ;
+}
+
+.registerMenager{
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.registerMenager > div{
+  border: 2px solid #ccc;
+}
+
+.writerMenager{
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.writerMenager > div{
+  border: 2px solid #ccc;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 2em;
+  margin-left: 0.5em;
+  color: #4e4e4e;
+}
+
+.writeField > .title_input >input{
+  color: #4e4e4e;
+  font-size: 1em;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px #d35400 solid;
+  outline: none;
+  margin-left: 15px;
+  width: 50%;
+}
+
+.writeField > .content_input{
+  color: #3a3a3a;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.writeField > .content_input >div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.writeField > .content_input >div>textarea{
+  resize: none;
+  color: #4e4e4e;
+  font-size: 1em;
+  padding: 5px;
+  border: none;
+  border: 2px #2c3e50 solid;
+  outline: none;
+  width: 100%;
+}
+
+
+.write_submit{
+  color: #2c3e50;
+  font-size: 1.5em;
+  padding: 5px;
+  border: none;
+  border: 2px #34495e solid;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.art_user{
+  margin-bottom: 5px;
+  border-bottom: #2980b9 2px solid;
+  width: 25%;
+  margin-top: 15px;
+  color: #34495e;
+  font-size: 1.25em;
+}
+
+.header{
+  background-color: #229cd4;
+  width: 100%;
+  text-align: right;
+  font-size: 2em;
+  vertical-align: top;
+}
+
+button{
+  font-family: 'Comic Sans MS';
+}
+
+.deleteButton{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+}
+
+.deleteButton:hover{
+  transform: scale(1);
+  transition: 500ms;
+  border: 2px solid black;
+}
+
+.error{
+  color: #e74c3c;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.writeField{
+  height: 50vh;
+  width: 50vw;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.writeField > .title_input{
+  color: #3a3a3a;
+  font-size: 1.5em;
+}
+
+.entry_content{
+  font-size: 1em;
+  margin: 0 0.5em 0.5em 1em;
+  color: #4e4e4e;
+}
+
+input[type='file']{
+  display: none;
+}
+
+label[for='file']{
+  color: #3a3a3a;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.file_name{
+  color: #2980b9;
+  font-size: 1.25em;
+  padding: 5px;
+}
